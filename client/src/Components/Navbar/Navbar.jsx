@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Weather from "../Weather/Weather";
 
 const Navbar = () => {
 	return (
@@ -73,16 +74,17 @@ const Navbar = () => {
 									Projects
 								</Link>
 								<Link
-									to="/contacts"
+									to="/contact"
 									className="navbar-item"
 									href="/"
 								>
-									Contacts
+									Contact
 								</Link>
 							</div>
 						</div>
 					</div>
 				</div>
+                <Weather/>
 			</nav>
 		</div>
 	);
