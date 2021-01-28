@@ -1,31 +1,26 @@
-import logo from "./logo.svg";
-import "./App.css";
-import { useEffect } from "react";
-import axios from "axios";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./Containers/Home/Home";
+import Bio from "./Containers/Bio/Bio";
+import Education from "./Containers/Education/Education";
+import Projects from "./Containers/Projects/Projects";
+import WorkHistory from "./Containers/WorkHistory/WorkHistory";
+import Navbar from "./Components/Navbar/Navbar";
+import Contact from "./Containers/Contact/Contact";
 
 function App() {
-	useEffect(() => {
-		axios.get("/api/config").then(response => {
-      console.log(response.data);
-    });
-	}, []);
-
 	return (
 		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
-			</header>
+			<Router>
+				<Navbar />
+				<Switch>
+					<Route path="/workhistory" component={WorkHistory} />
+					<Route path="/bio" component={Bio} />
+					<Route path="/education" component={Education} />
+					<Route path="/projects" component={Projects} />
+					<Route path="/contact" component={Contact} />
+					<Route path="/" component={Home} />
+				</Switch>
+			</Router>
 		</div>
 	);
 }
