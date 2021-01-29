@@ -6,6 +6,7 @@ import Projects from "./Containers/Projects/Projects";
 import WorkHistory from "./Containers/WorkHistory/WorkHistory";
 import Navbar from "./Components/Navbar/Navbar";
 import Contact from "./Containers/Contact/Contact";
+import Footer from "./Components/Footer/Footer.jsx";
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 					<Route path="/contact" component={Contact} />
 					<Route path="/" component={Home} />
 				</Switch>
+        <Footer/>
 			</Router>
 		</div>
 	);

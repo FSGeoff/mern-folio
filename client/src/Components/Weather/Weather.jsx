@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-
 const Weather = () => {
 	const [weatherState, setWeatherState] = useState();
 
-	const getWeather = () => {
-        axios
+	useEffect(() => {
+		axios
 			.get(
 				"https://api.openweathermap.org/data/2.5/weather?q=Atlanta&units=imperial&appid=b6888160cea1ac7e31cb37a7c245701a"
 			)
@@ -21,25 +20,14 @@ const Weather = () => {
 			.catch((err) => {
 				console.log(err);
 			});
-    };
-
-	useEffect(() => {
-        getWeather()
-        // setWeatherState(response.data)
 	});
 
 	return (
 		<div className="container">
-            <p>{weatherState.main.temp}</p>
-			{/* {weatherState.map((forecast) => (
-				<div>
-					<h1>Atlanta Weather</h1>
-					<p>Temp: {forecast.temp}&#176;</p>
-					<p></p>
-				</div>
-			))} */}
+			<h1>Atlanta Weather</h1>
 		</div>
 	);
 };
 
 export default Weather;
+

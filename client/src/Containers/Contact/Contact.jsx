@@ -3,24 +3,25 @@ import React from "react";
 const Contact = () => {
 	return (
 		<div>
-			<h1>Contact Me</h1>
-			<div className="container">
-				<div className="column is-6">
+			<h1>Feel Free to Contact Me</h1>
+			<div className="container is-centered">
+				<div className="column is-6 ">
 					<input
 						class="input is-primary"
 						type="text"
 						placeholder="Name"
 					></input>
-
+					<div style={{ height: "10px" }}></div>
 					<input
 						class="input is-primary"
 						type="text"
 						placeholder="Email"
 					></input>
+					<div style={{ height: "10px" }}></div>
 					<textarea
 						class="textarea"
-						placeholder="10 lines of textarea"
-						rows="10"
+						placeholder="message"
+						rows="5"
 					></textarea>
 				</div>
 			</div>
