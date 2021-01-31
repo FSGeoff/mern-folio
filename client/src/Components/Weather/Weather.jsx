@@ -25,6 +25,7 @@ const Weather = () => {
 	return (
 		<div className="container">
 			<h1>Atlanta Weather</h1>
+    <p>{weatherState.main.temp}</p>
 		</div>
 	);
 };

@@ -6,8 +6,8 @@ const Footer = () => {
 			<footer
 				className="footer"
 				style={{
-					backgroundColor: "#202931",
-					height: "12px",
+                    backgroundColor: "black",
+					height: "5px",
 					
 				}}
 			>

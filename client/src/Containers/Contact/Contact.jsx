@@ -2,10 +2,23 @@ import React from "react";
 
 const Contact = () => {
 	return (
-		<div>
-			<h1>Feel Free to Contact Me</h1>
-			<div className="container is-centered">
-				<div className="column is-6 ">
+		<div style={{backgroundColor: "#E77919", height: "550px"}}>
+			<h1
+				style={{
+					fontFamily: "sans-serif",
+					fontSize: "45px",
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    color: "#202931"
+				}}
+			>
+				Contact Me
+			</h1>
+			<div className="container ">
+				<div
+					className="column is-half
+is-offset-one-quarter "
+				>
 					<input
 						class="input is-primary"
 						type="text"

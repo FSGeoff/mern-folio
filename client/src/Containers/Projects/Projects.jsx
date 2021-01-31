@@ -2,7 +2,7 @@ import React from 'react';
 
 const Projects = () => {
     return (
-        <div>
+        <div style={{backgroundColor: "#E77919", height: "550px"}}>
             <h1>Projects</h1>
         </div>
     );

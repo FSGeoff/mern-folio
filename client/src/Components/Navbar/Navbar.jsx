@@ -1,5 +1,6 @@
 import React from "react";
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import Weather from "../Weather/Weather";
 // import Weather from "../Weather/Weather";
 
 const Navbar = () => {
@@ -7,7 +8,7 @@ const Navbar = () => {
 		<>
 			<div>
 				<div className="tabs is-centered">
-					<ul style={{ backgroundColor: "#202931" }}>
+					<ul style={{ backgroundColor: "black" }}>
 						<li className="is-active">
 							<NavLink to="/">
 								<img
@@ -15,6 +16,7 @@ const Navbar = () => {
 									alt="Geoff Nix"
 									style={{ height: "125px", width: "105px" }}
 								></img>
+								
 							</NavLink>
 						</li>
 						<NavLink
