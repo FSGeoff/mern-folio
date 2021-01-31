@@ -2,28 +2,36 @@ import React from "react";
 
 const Contact = () => {
 	return (
-		<div style={{
-            backgroundImage: `url("https://edge.alluremedia.com.au/m/l/2015/06/CodingSnippet.jpg")`,
-            // height: "100%",
-            // display: "flex",
-            // flexDirection: "column",
-        }}>
-			<h1
-				style={{
-					fontFamily: "sans-serif",
-					fontSize: "45px",
-                    fontWeight: "bold",
-                    textAlign: "center",
-                    color: "#202931"
-				}}
-			>
-				Contact Me
-			</h1>
+		<div
+			style={{
+				backgroundImage: `url("https://edge.alluremedia.com.au/m/l/2015/06/CodingSnippet.jpg")`,
+				height: "600px",
+				// display: "flex",
+				// flexDirection: "column",
+			}}
+		>
 			<div className="container ">
 				<div
 					className="column is-half
 is-offset-one-quarter "
 				>
+					<div style={{ height: "40px" }}></div>
+					<h1
+						style={{
+							fontFamily: "sans-serif",
+							fontSize: "45px",
+							fontWeight: "bold",
+							textAlign: "center",
+							color: "white",
+							backgroundColor: "black",
+							opacity: "0.75",
+							borderColor: "white",
+							borderRadius: "10px",
+						}}
+					>
+						Contact Me
+					</h1>
+					<div style={{ height: "40px" }}></div>
 					<input
 						class="input is-primary"
 						type="text"

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const Weather = () => {
-	const [weatherState, setWeatherState] = useState();
+	const [weatherState, setWeatherState] = useState({});
 
 	useEffect(() => {
 		axios
