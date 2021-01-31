@@ -2,7 +2,12 @@ import React from 'react';
 
 const Projects = () => {
     return (
-        <div style={{backgroundColor: "#E77919", height: "550px"}}>
+        <div style={{
+            backgroundImage: `url("https://edge.alluremedia.com.au/m/l/2015/06/CodingSnippet.jpg")`,
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+        }}>
             <h1>Projects</h1>
         </div>
     );
