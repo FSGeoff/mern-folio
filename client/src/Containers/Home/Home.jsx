@@ -18,7 +18,6 @@ const Home = () => {
 							style={{
 								outline: "solid 1px white",
 								backgroundColor: "black",
-								opacity: "0.75",
 							}}
 						>
 							<p
@@ -40,11 +39,11 @@ const Home = () => {
 								>
 									Hello World
 								</h1>
-								My name is Geoff Nix and as you can
-								see, I have a coding background. I am a full
-								stack developer that loves a challenge. This
-								site was built using the full MERN stack. Please
-								explore my site and get to know more about me.
+								My name is Geoff Nix and as you can see, I have
+								a coding background. I am a full stack developer
+								that loves a challenge. This site was built
+								using the full MERN stack. Please explore my
+								site and get to know more about me.
 							</p>
 							<p style={{ textAlign: "center" }}>
 								<a href="/">Resume /</a>
