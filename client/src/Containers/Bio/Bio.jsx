@@ -7,13 +7,14 @@ const Bio = () => {
 				backgroundImage: `url("https://edge.alluremedia.com.au/m/l/2015/06/CodingSnippet.jpg")`,
 				height: "600px",
 				display: "flex",
-				flexDirection: "column",
+                flexDirection: "column",
+                clear:"both",
 			}}
 		>
 			<div className="spacer" style={{ height: "50px" }}></div>
 			<div
 				className="column is-three-fifths
-is-offset-one-fifth"
+is-offset-one-fifth "
 				style={{
 					outline: "solid 1px white",
 					backgroundColor: "black",

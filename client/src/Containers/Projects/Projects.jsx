@@ -18,7 +18,7 @@ const Projects = () => {
 		>
 			<div style={{ height: "40px" }} className="spacer"></div>
 			<div className="container"  >
-				<div className="columns"  >
+				<div className="columns" style={{paddingBottom:"25px"}} >
 					<card 
 						class="column is-three-fifths
 is-offset-one-fifth" 
@@ -48,8 +48,8 @@ is-offset-one-fifth"
 									{project.name}
 								</p>
 								<p>
-									<a href={project.repo}>repo</a>/
-									<a href={project.website}>website</a>
+									<a href={project.repo}> GitHub Repo</a>
+									
 								</p>
 
 								<div class="content">
