@@ -17,25 +17,22 @@ const Contact = () => {
 				method="post"
 			>
 				<div
+					style={{
+						fontFamily: "sans-serif",
+						fontSize: "45px",
+						fontWeight: "bold",
+						textAlign: "center",
+						color: "white",
+						backgroundColor: "black",
+						outline: "solid 1px white",
+						borderColor: "white",
+						borderRadius: "10px",
+					}}
 					className="column is-half
 is-offset-one-quarter "
 				>
 					<div style={{ height: "40px" }}></div>
-					<h1
-						style={{
-							fontFamily: "sans-serif",
-							fontSize: "45px",
-							fontWeight: "bold",
-							textAlign: "center",
-							color: "white",
-							backgroundColor: "black",
-							opacity: "0.75",
-							borderColor: "white",
-							borderRadius: "10px",
-						}}
-					>
-						Contact Me
-					</h1>
+					<h1>Contact Me</h1>
 					<div style={{ height: "40px" }}></div>
 					<input
 						class="input is-primary"
@@ -44,7 +41,7 @@ is-offset-one-quarter "
 						name="Name"
 						id="name"
 					></input>
-					<div style={{ height: "10px" }}></div>
+					<div style={{ height: "5px" }}></div>
 					<input
 						class="input is-primary"
 						type="text"
@@ -52,7 +49,7 @@ is-offset-one-quarter "
 						name="Email"
 						id="email"
 					></input>
-					<div style={{ height: "10px" }}></div>
+					<div style={{ height: "5px" }}></div>
 					<textarea
 						class="textarea"
 						placeholder="message"
@@ -60,7 +57,21 @@ is-offset-one-quarter "
 						name="Message"
 						id="message"
 					></textarea>
-					<button className="button is-small is-fullwidth is-info" type="submit">SUBMIT</button>
+					<div style={{ height: "20px" }}></div>
+					<button
+						style={{
+							height: "40px",
+							backgroundColor: "black",
+							color: "white",
+							fontSize: "30px",
+							borderRadius: "15px",
+							border: "solid 1px white",
+						}}
+						className="button is-active is-fullwidth "
+						type="submit"
+					>
+						SUBMIT
+					</button>
 				</div>
 			</form>
 		</div>

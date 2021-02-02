@@ -10,6 +10,7 @@ import Footer from "./Components/Footer/Footer.jsx";
 
 function App() {
 	return (
+		<>
 		<div className="App">
 			<Router>
 				<Navbar />
@@ -24,6 +25,7 @@ function App() {
         <Footer/>
 			</Router>
 		</div>
+		</>
 	);
 }
 

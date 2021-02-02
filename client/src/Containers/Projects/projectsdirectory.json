@@ -1,0 +1,30 @@
+[
+	{
+		"id": "01",
+		"name": "What-da-ya-have",
+		"repo": "https://github.com/FSGeoff/What-da-ya-have.git",
+		"website": "https://fsgeoff.github.io/What-da-ya-have/",
+		"body": "Group project in which we utilized jQuery/Ajax and used 3 API's to create an application that would give restaurants in close proximity to Marta Stations as well as the train schedule and local weather."
+	},
+	{
+		"id": "02",
+		"name": "Employee Template Engine",
+		"repo": "https://github.com/FSGeoff/employee-template-engine.git",
+
+		"body": "Node CLI that takes in information about employees and generates an HTML webpage that displays summaries for each person. Utilized internal Node.js packages fs, path, and jest for testing."
+	},
+	{
+		"id": "03",
+		"name": "ReadMe Generator",
+		"repo": "https://github.com/FSGeoff/readMe-gen.git",
+
+		"body": "This was an introduction to Node.js and server side programming. Used the inquirer package to get info from user, capture the response, and use the fs read/write file function to generate a README.md document."
+	},
+	{
+		"id": "04",
+		"name": "Eat-Da-Burger!",
+		"repo": "https://github.com/FSGeoff/burger.git",
+		"website": "https://geoffsburgers.herokuapp.com/",
+		"body": "This assignment involved using express to create routes and utilizing the Handlebars HTML template engine. This site was deployed to Heroku."
+	}
+]
