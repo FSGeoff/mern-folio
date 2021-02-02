@@ -8,7 +8,7 @@ const WorkHistory = () => {
             display: "flex",
             flexDirection: "column",
         }}>
-            <h1>Work History</h1>
+           
         </div>
     );
 };

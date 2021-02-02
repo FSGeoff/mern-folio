@@ -115,6 +115,7 @@ const Education = () => {
                         padding:"8px",
 					}}
 				>
+
 					<div className="columns is-mobile">
 						<div className="column">
 							<img

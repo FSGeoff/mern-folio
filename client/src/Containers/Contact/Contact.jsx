@@ -10,7 +10,12 @@ const Contact = () => {
 				// flexDirection: "column",
 			}}
 		>
-			<div className="container ">
+			<form
+				className="container "
+				form
+				action="https://formspree.io/f/xknpejnz"
+				method="post"
+			>
 				<div
 					className="column is-half
 is-offset-one-quarter "
@@ -36,21 +41,28 @@ is-offset-one-quarter "
 						class="input is-primary"
 						type="text"
 						placeholder="Name"
+						name="Name"
+						id="name"
 					></input>
 					<div style={{ height: "10px" }}></div>
 					<input
 						class="input is-primary"
 						type="text"
 						placeholder="Email"
+						name="Email"
+						id="email"
 					></input>
 					<div style={{ height: "10px" }}></div>
 					<textarea
 						class="textarea"
 						placeholder="message"
 						rows="5"
+						name="Message"
+						id="message"
 					></textarea>
+					<button className="button is-small is-fullwidth is-info" type="submit">SUBMIT</button>
 				</div>
-			</div>
+			</form>
 		</div>
 	);
 };
