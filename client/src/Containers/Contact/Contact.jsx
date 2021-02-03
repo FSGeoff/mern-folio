@@ -10,6 +10,7 @@ const Contact = () => {
 				// flexDirection: "column",
 			}}
 		>
+			<div className="spacer" style={{height:"40px"}}></div>
 			<form
 				className="container "
 				form
@@ -52,7 +53,7 @@ is-offset-one-quarter "
 					<div style={{ height: "5px" }}></div>
 					<textarea
 						class="textarea"
-						placeholder="message"
+						placeholder="Message"
 						rows="5"
 						name="Message"
 						id="message"
@@ -64,7 +65,7 @@ is-offset-one-quarter "
 							backgroundColor: "black",
 							color: "white",
 							fontSize: "30px",
-							borderRadius: "15px",
+							// borderRadius: "15px",
 							border: "solid 1px white",
 						}}
 						className="button is-active is-fullwidth "

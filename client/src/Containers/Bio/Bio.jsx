@@ -5,16 +5,15 @@ const Bio = () => {
 		<div
 			style={{
 				backgroundImage: `url("https://edge.alluremedia.com.au/m/l/2015/06/CodingSnippet.jpg")`,
-				height: "600px",
+				height: "800px",
 				display: "flex",
-                flexDirection: "column",
-                clear:"both",
+				flexDirection: "column",
+				clear: "both",
 			}}
 		>
-			<div className="spacer" style={{ height: "50px" }}></div>
+			
 			<div
-				className="column is-three-fifths
-is-offset-one-fifth "
+				className="column is-6 is-offset-3 "
 				style={{
 					outline: "solid 1px white",
 					backgroundColor: "black",
@@ -29,6 +28,7 @@ is-offset-one-fifth "
 						marginLeft: "auto",
 						marginRight: "auto",
 					}}
+					className="fade-in"
 					src="https://res.cloudinary.com/fsgeoff/image/upload/v1609190012/C785A719-C5BE-4347-BDD3-1E69FA46DFAD_dbbpb4.jpg"
 					alt="geoff nix"
 				></img>
@@ -45,10 +45,14 @@ is-offset-one-fourth"
 					>
 						Originally, I was a Licensed Master Barber in the State
 						of Georgia. In September of 2017 I was introduced to
-						Salesforce. About 2 years, a software engineering
+						Salesforce. About 2+ years, a software engineering
 						position, and 6 Salesforce Certifications later, I
-						entered Ga Tech Coding Bootcamp. I'm definitely enjoying
-						the journey. So much to learn.
+						enrolled in Ga Tech Coding Bootcamp. There, I
+						established my coding knowledge foundation, and
+						particularly, React.js. I'm currently enrolled in college
+						in pursuit of a Bachelor's Degree in Computer Science.
+						I've cherished every step of the journey and look
+						forward to learning more.
 					</p>
 				</div>
 			</div>

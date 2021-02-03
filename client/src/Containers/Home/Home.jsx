@@ -46,7 +46,9 @@ const Home = () => {
 								site and get to know more about me.
 							</p>
 							<p style={{ textAlign: "center" }}>
-								<a href="/">Resume /</a>
+								<a href="https://docs.google.com/document/d/1v7h7kf4_P-gItXlsUAg02pOsaA9SPEK3J1IcrHoP_1s/edit?usp=sharing">
+									Resume /
+								</a>
 								<a href="https://www.linkedin.com/in/geoff-nix-070512178/">
 									{" "}
 									LinkedIn

@@ -5,9 +5,10 @@ const WorkHistory = () => {
 		<div
 			style={{
 				backgroundImage: `url("https://edge.alluremedia.com.au/m/l/2015/06/CodingSnippet.jpg")`,
-				height: "700px",
+				height: "800px",
 				display: "flex",
-				flexDirection: "column",
+                flexDirection: "column",
+                clear: "both"
 			}}
 		>
 

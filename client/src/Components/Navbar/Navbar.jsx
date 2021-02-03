@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-
 const Navbar = () => {
 	return (
 		<>
@@ -18,25 +17,26 @@ const Navbar = () => {
 					</li>
 					<NavLink
 						to="/"
-						style={{ color: "white" }}
-						// activeClassName="is-active"
-						// activeStyle={{ backgroundColor: "#e77a18" }}
+						style={{ color: "white", fontSize:"22px" }}
+						
+						
 					>
 						Home
 					</NavLink>
 					<NavLink
 						to="/bio"
 						activeClassName="is-active"
-						activeStyle={{ backgroundColor: "#e77a18" }}
-						style={{ color: "white" }}
+						activeStyle={{ backgroundColor: "#FC020F" }}
+						style={{ color: "#1D4EE7", fontSize:"22px" }}
+						
 					>
 						Bio
 					</NavLink>
 					<NavLink
 						to="education"
 						activeClassName="is-active"
-						activeStyle={{ backgroundColor: "#e77a18" }}
-						style={{ color: "white" }}
+						activeStyle={{ backgroundColor: "#04D936" }}
+						style={{ color: "#E4FC02",fontSize:"22px" }}
 					>
 						Education
 					</NavLink>
@@ -44,29 +44,29 @@ const Navbar = () => {
 						to="workhistory"
 						activeClassName="is-active"
 						activeStyle={{ backgroundColor: "#e77a18" }}
-						style={{ color: "white" }}
+						style={{ color: "#CC02FC",fontSize:"22px" }}
 					>
 						Work History
 					</NavLink>
 					<NavLink
 						to="/projects"
 						activeClassName="is-active"
-						activeStyle={{ backgroundColor: "#e77a18" }}
-						style={{ color: "white" }}
+						activeStyle={{ backgroundColor: "#E4FC02" }}
+						style={{ color: "#04D936",fontSize:"22px" }}
 					>
 						Projects
 					</NavLink>
 					<NavLink
 						to="contact"
 						activeClassName="is-active"
-						activeStyle={{ backgroundColor: "#e77a18" }}
-						style={{ color: "white" }}
+						activeStyle={{ backgroundColor: "#1D4EE7" }}
+						style={{ color: "#FC020F",fontSize:"22px" }}
 					>
 						Contact
 					</NavLink>
 				</ul>
 
-				<div
+				{/* <div
 					style={{ backgroundColor: "black" }}
 					className="column is-2 "
 				>
@@ -76,7 +76,7 @@ const Navbar = () => {
 					<br />
 					<p style={{ float: "right", color: "white" }}>Temp:</p><br/>
                     <p style={{ float: "right", color: "white" }}>Forecast</p>
-				</div>
+				</div> */}
 			</div>
 		</>
 	);

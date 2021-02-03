@@ -11,26 +11,27 @@ const Projects = () => {
 		<div
 			style={{
 				backgroundImage: `url("https://edge.alluremedia.com.au/m/l/2015/06/CodingSnippet.jpg")`,
-				height: "1000px",
+                height: "1000px",
 				display: "flex",
 				flexDirection: "column",
 			}}
 		>
 			<div style={{ height: "40px" }} className="spacer"></div>
-			<div className="container"  >
-				<div className="columns" style={{paddingBottom:"25px"}} >
-					<card 
-						class="column is-three-fifths
-is-offset-one-fifth" 
+			<div className="container">
+				<div className="columns" style={{ paddingBottom: "25px" }}>
+					<card
+						class="column is-4 offset-4"
+						style={{ margin: "10px" }}
 					>
 						{projectsdirectory.map((project) => (
-							<div key={project.id}
+							<div
+								key={project.id}
 								style={{
 									textAlign: "center",
 									color: "white",
 									backgroundColor: "black",
 									border: "solid 1px white",
-									margin: "10px",
+									marginBottom: "10px",
 									borderRadius: "15px",
 									padding: "10px",
 								}}
@@ -48,8 +49,8 @@ is-offset-one-fifth"
 									{project.name}
 								</p>
 								<p>
-									<a href={project.repo}> GitHub Repo</a>
-									
+									<a href={project.repo}>GitHub Repo </a>/
+									<a href={project.website}>Website</a>
 								</p>
 
 								<div class="content">

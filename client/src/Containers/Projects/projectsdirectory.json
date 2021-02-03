@@ -8,17 +8,17 @@
 	},
 	{
 		"id": "02",
-		"name": "Employee Template Engine",
-		"repo": "https://github.com/FSGeoff/employee-template-engine.git",
-
-		"body": "Node CLI that takes in information about employees and generates an HTML webpage that displays summaries for each person. Utilized internal Node.js packages fs, path, and jest for testing."
+		"name": "Fitness Tracker",
+		"repo": "https://github.com/FSGeoff/wkt-trkr.git",
+		"website": "https://stormy-springs-21165.herokuapp.com/stats",
+		"body": "I used NPM packages(Express, Mongoose, Morgan, and Nodemon) to build an application that will view create and track the name, type, weight, sets, reps, and duration of daily workouts."
 	},
 	{
 		"id": "03",
-		"name": "ReadMe Generator",
-		"repo": "https://github.com/FSGeoff/readMe-gen.git",
-
-		"body": "This was an introduction to Node.js and server side programming. Used the inquirer package to get info from user, capture the response, and use the fs read/write file function to generate a README.md document."
+		"name": "Budget Tracker",
+		"repo": "https://github.com/FSGeoff/bud-pwa-app.git",
+		"website": "https://gentle-reaches-97551.herokuapp.com/",
+		"body": "This app uses Mongodb, Express.js and the Service Worker, Manifest, and Caching used in a PWA."
 	},
 	{
 		"id": "04",
