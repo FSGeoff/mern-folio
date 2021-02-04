@@ -31,11 +31,15 @@ connection.on("error", (err) => {
   console.log("Mongoose connection error: ", err);
 });
 
+const ContactsController = require("./controllers/contactsController");
+
 app.get("/api/config", (req, res) => {
   res.json({
     success: true,
   });
 });
+
+app.use("/api/contacts", ContactsController);
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client/build/index.html"));

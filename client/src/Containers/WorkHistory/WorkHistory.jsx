@@ -5,15 +5,23 @@ const WorkHistory = () => {
 		<div
 			style={{
 				backgroundImage: `url("https://edge.alluremedia.com.au/m/l/2015/06/CodingSnippet.jpg")`,
-				height: "800px",
+				height: "600px",
 				display: "flex",
-                flexDirection: "column",
-                clear: "both"
+				flexDirection: "column",
+				clear: "both",
 			}}
 		>
-
-            <div className="spacer" style={{height:"50px"}}></div>
-			<div className="container" id="work-hist" style={{outline:"solid 1px white", color:"white", backgroundColor:"black", padding:"16px"}}>
+			<div className="spacer" style={{ height: "50px" }}></div>
+			<div
+				className="container"
+				id="work-hist"
+				style={{
+					outline: "solid 1px white",
+					color: "white",
+					backgroundColor: "black",
+					padding: "16px",
+				}}
+			>
 				<h2 id="work-hist-hdr">
 					Docmation LLC - Software Engineer
 					<span id="work-date">8/2019 - 11/2020</span>
@@ -77,7 +85,7 @@ const WorkHistory = () => {
 						</a>
 					</div>
 				</div>
-				<div className="container">
+				<div className="container" style={{height:"100px"}}>
 					<hr />
 					<div className="rec-txt">
 						<h1 id="rec-hdr">References</h1>

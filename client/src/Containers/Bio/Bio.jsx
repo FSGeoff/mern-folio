@@ -1,4 +1,5 @@
 import React from "react";
+import "./bio.css";
 
 const Bio = () => {
 	return (
@@ -40,12 +41,13 @@ is-offset-one-fourth"
 						style={{
 							color: "white",
 							fontFamily: "sans-serif",
-							fontSize: "22px",
+                            fontSize: "22px",
+                            textAlign:"left"
 						}}
 					>
 						Originally, I was a Licensed Master Barber in the State
 						of Georgia. In September of 2017 I was introduced to
-						Salesforce. About 2+ years, a software engineering
+						Salesforce. After about 3+ years, a software engineering
 						position, and 6 Salesforce Certifications later, I
 						enrolled in Ga Tech Coding Bootcamp. There, I
 						established my coding knowledge foundation, and

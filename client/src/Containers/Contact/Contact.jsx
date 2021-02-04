@@ -1,21 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
 const Contact = () => {
+	const [name, setName] = useState("");
+	const [email, setEmail] = useState("");
+	const [message, setMessage] = useState("");
+
+	const handleFormSubmit = (e) => {
+		e.preventDefault();
+		axios
+			.post("/api/contacts", {
+				name,
+				email,
+				message,
+			})
+			.then((response) => {
+				console.log(response);
+			})
+			.catch((err) => {
+				console.log(err);
+			});
+	};
+
 	return (
 		<div
 			style={{
 				backgroundImage: `url("https://edge.alluremedia.com.au/m/l/2015/06/CodingSnippet.jpg")`,
 				height: "600px",
-				// display: "flex",
-				// flexDirection: "column",
+			
 			}}
 		>
-			<div className="spacer" style={{height:"40px"}}></div>
+			<div className="spacer" style={{ height: "40px" }}></div>
 			<form
 				className="container "
 				form
 				action="https://formspree.io/f/xknpejnz"
 				method="post"
+				onSubmit={handleFormSubmit}
 			>
 				<div
 					style={{
@@ -29,8 +50,8 @@ const Contact = () => {
 						borderColor: "white",
 						borderRadius: "10px",
 					}}
-					className="column is-half
-is-offset-one-quarter "
+					className="column is-6
+is-offset-3 "
 				>
 					<div style={{ height: "40px" }}></div>
 					<h1>Contact Me</h1>
@@ -41,6 +62,10 @@ is-offset-one-quarter "
 						placeholder="Name"
 						name="Name"
 						id="name"
+						value={name}
+						onChange={(e) => {
+							setName(e.target.value);
+						}}
 					></input>
 					<div style={{ height: "5px" }}></div>
 					<input
@@ -49,6 +74,10 @@ is-offset-one-quarter "
 						placeholder="Email"
 						name="Email"
 						id="email"
+						value={email}
+						onChange={(e) => {
+							setEmail(e.target.value);
+						}}
 					></input>
 					<div style={{ height: "5px" }}></div>
 					<textarea
@@ -57,6 +86,10 @@ is-offset-one-quarter "
 						rows="5"
 						name="Message"
 						id="message"
+						value={message}
+						onChange={(e) => {
+							setMessage(e.target.value);
+						}}
 					></textarea>
 					<div style={{ height: "20px" }}></div>
 					<button
@@ -65,11 +98,11 @@ is-offset-one-quarter "
 							backgroundColor: "black",
 							color: "white",
 							fontSize: "30px",
-							// borderRadius: "15px",
 							border: "solid 1px white",
 						}}
 						className="button is-active is-fullwidth "
 						type="submit"
+						
 					>
 						SUBMIT
 					</button>

@@ -11,18 +11,15 @@ const Projects = () => {
 		<div
 			style={{
 				backgroundImage: `url("https://edge.alluremedia.com.au/m/l/2015/06/CodingSnippet.jpg")`,
-                height: "1000px",
+				height: "700px",
 				display: "flex",
-				flexDirection: "column",
 			}}
 		>
 			<div style={{ height: "40px" }} className="spacer"></div>
 			<div className="container">
 				<div className="columns" style={{ paddingBottom: "25px" }}>
-					<card
-						class="column is-4 offset-4"
-						style={{ margin: "10px" }}
-					>
+                    <div className="spacer" style={{height:"50px"}}></div>
+					<card class="column is-8 is-offset-2">
 						{projectsdirectory.map((project) => (
 							<div
 								key={project.id}
@@ -32,7 +29,7 @@ const Projects = () => {
 									backgroundColor: "black",
 									border: "solid 1px white",
 									marginBottom: "10px",
-									borderRadius: "15px",
+
 									padding: "10px",
 								}}
 								class="tile is-child box"

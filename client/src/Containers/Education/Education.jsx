@@ -19,7 +19,8 @@ const Education = () => {
 					style={{
 						color: "white",
 						backgroundColor: "black",
-						outline: " solid 1px white",
+                        outline: " solid 1px white",
+                        padding:"12px",
 					}}
 				>
 					<p>
