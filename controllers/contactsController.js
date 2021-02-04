@@ -16,7 +16,7 @@ router.get("/", (req, res) => {
 router.post("/", (req, res) => {
 	console.table(req.body);
 	Contact.create(req.body).then((newContact) => {
-		console.table(newContact);
+		console.log(newContact);
 		res.json(newContact);
 	});
 });

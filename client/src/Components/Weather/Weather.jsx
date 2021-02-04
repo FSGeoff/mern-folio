@@ -33,7 +33,7 @@ const Weather = () => {
 				>
 					ATLANTA
 				</h1>
-				<p style={{ color: "white", fontFamily: "sans-serif" }}>
+				<p  style={{ color: "white", fontFamily: "sans-serif" }}>
 					{Math.round(temp)}&#8457;
 				</p>
 

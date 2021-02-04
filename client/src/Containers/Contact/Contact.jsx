@@ -27,15 +27,14 @@ const Contact = () => {
 			style={{
 				backgroundImage: `url("https://edge.alluremedia.com.au/m/l/2015/06/CodingSnippet.jpg")`,
 				height: "600px",
-			
 			}}
 		>
 			<div className="spacer" style={{ height: "40px" }}></div>
 			<form
 				className="container "
 				form
-				action="https://formspree.io/f/xknpejnz"
-				method="post"
+				// action="https://formspree.io/f/xknpejnz"
+				// method="post"
 				onSubmit={handleFormSubmit}
 			>
 				<div
@@ -57,6 +56,7 @@ is-offset-3 "
 					<h1>Contact Me</h1>
 					<div style={{ height: "40px" }}></div>
 					<input
+						key="id"
 						class="input is-primary"
 						type="text"
 						placeholder="Name"
@@ -69,6 +69,7 @@ is-offset-3 "
 					></input>
 					<div style={{ height: "5px" }}></div>
 					<input
+						key="id"
 						class="input is-primary"
 						type="text"
 						placeholder="Email"
@@ -81,6 +82,7 @@ is-offset-3 "
 					></input>
 					<div style={{ height: "5px" }}></div>
 					<textarea
+						key=""
 						class="textarea"
 						placeholder="Message"
 						rows="5"
@@ -102,7 +104,6 @@ is-offset-3 "
 						}}
 						className="button is-active is-fullwidth "
 						type="submit"
-						
 					>
 						SUBMIT
 					</button>
