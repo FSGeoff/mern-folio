@@ -17,8 +17,9 @@ const Projects = () => {
 		>
 			<div style={{ height: "40px" }} className="spacer"></div>
 			<div className="container">
+            <div className="spacer" style={{height:"50px", margin:"8px"}}></div>
 				<div className="columns" style={{ paddingBottom: "25px" }}>
-                    <div className="spacer" style={{height:"50px"}}></div>
+                    
 					<card class="column is-8 is-offset-2">
 						{projectsdirectory.map((project) => (
 							<div

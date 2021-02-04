@@ -12,7 +12,7 @@ const Bio = () => {
 				clear: "both",
 			}}
 		>
-			
+			<div style={{height:"50px"}}></div>
 			<div
 				className="column is-6 is-offset-3 "
 				style={{

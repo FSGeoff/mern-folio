@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Clock from "../Clock/Clock";
 
 const Weather = () => {
 	const [weather, setWeather] = useState([]);
@@ -41,6 +42,7 @@ const Weather = () => {
 						{forecast.main.toUpperCase()}
 					</p>
 				))}
+				<Clock />
 			</div>
 		</div>
 	);
