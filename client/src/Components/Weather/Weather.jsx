@@ -42,7 +42,7 @@ const Weather = () => {
 						{forecast.main.toUpperCase()}
 					</p>
 				))}
-				<Clock />
+				{/* <Clock /> */}
 			</div>
 		</div>
 	);
