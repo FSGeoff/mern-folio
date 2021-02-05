@@ -8,6 +8,9 @@ const Contact = () => {
 
 	const handleFormSubmit = (e) => {
 		e.preventDefault();
+		setName("");
+		setEmail("");
+		setMessage("");
 		axios
 			.post("/api/contacts", {
 				name,
