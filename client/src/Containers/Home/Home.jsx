@@ -7,8 +7,7 @@ const Home = () => {
 				style={{
 					backgroundImage: `url("https://edge.alluremedia.com.au/m/l/2015/06/CodingSnippet.jpg")`,
 					height: "100%",
-					// display: "flex",
-					// flexDirection: "column",
+					
 				}}
 			>
 				<div className="spacer" style={{ height: "60px" }}></div>

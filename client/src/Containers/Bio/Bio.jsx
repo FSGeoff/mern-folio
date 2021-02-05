@@ -12,7 +12,7 @@ const Bio = () => {
 				clear: "both",
 			}}
 		>
-			<div style={{height:"50px"}}></div>
+			<div style={{ height: "50px" }}></div>
 			<div
 				className="column is-6 is-offset-3 "
 				style={{
@@ -30,7 +30,7 @@ const Bio = () => {
 						marginRight: "auto",
 					}}
 					className="fade-in"
-					src="https://res.cloudinary.com/fsgeoff/image/upload/v1609190012/C785A719-C5BE-4347-BDD3-1E69FA46DFAD_dbbpb4.jpg"
+					src="https://res.cloudinary.com/fsgeoff/image/upload/v1609189896/DD7F1F0B-6657-4BDE-A956-7A8769A01F8B_1_201_a_dzmcdt.jpg"
 					alt="geoff nix"
 				></img>
 				<div
@@ -41,8 +41,8 @@ is-offset-one-fourth"
 						style={{
 							color: "white",
 							fontFamily: "sans-serif",
-                            fontSize: "22px",
-                            textAlign:"left"
+							fontSize: "22px",
+							textAlign: "left",
 						}}
 					>
 						Originally, I was a Licensed Master Barber in the State
@@ -51,10 +51,10 @@ is-offset-one-fourth"
 						position, and 6 Salesforce Certifications later, I
 						enrolled in Ga Tech Coding Bootcamp. There, I
 						established my coding knowledge foundation, and
-						particularly, React.js. I'm currently enrolled in college
-						in pursuit of a Bachelor's Degree in Computer Science.
-						I've cherished every step of the journey and look
-						forward to learning more.
+						particularly, React.js. I'm currently enrolled in
+						college in pursuit of a Bachelor's Degree in Computer
+						Science. I've cherished every step of the journey and
+						look forward to learning more.
 					</p>
 				</div>
 			</div>

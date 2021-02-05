@@ -11,6 +11,7 @@ const Contact = () => {
 		setName("");
 		setEmail("");
 		setMessage("");
+		alert("Thank you! I will be in touch");
 		axios
 			.post("/api/contacts", {
 				name,
@@ -35,9 +36,8 @@ const Contact = () => {
 			<div className="spacer" style={{ height: "40px" }}></div>
 			<form
 				className="container "
-				form
-				// action="https://formspree.io/f/xknpejnz"
-				// method="post"
+				
+				
 				onSubmit={handleFormSubmit}
 			>
 				<div
