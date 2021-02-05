@@ -5,7 +5,7 @@ import Clock from "../Clock/Clock";
 const Weather = () => {
 	const [weather, setWeather] = useState([]);
 	const [temp, setTemp] = useState(0);
-	const [description, setDescription] = useState("");
+	
 
 	useEffect(() => {
 		axios
@@ -17,7 +17,7 @@ const Weather = () => {
 				console.log(response.data.main.temp);
 				setWeather(response.data.weather);
 				setTemp(response.data.main.temp);
-				setDescription(response.data.main.description);
+				
 			});
 	}, []);
 
@@ -33,12 +33,15 @@ const Weather = () => {
 				>
 					ATLANTA
 				</h1>
-				<p  style={{ color: "white", fontFamily: "sans-serif" }}>
+				<p style={{ color: "white", fontFamily: "sans-serif" }}>
 					{Math.round(temp)}&#8457;
 				</p>
 
-				{weather.map((forecast) => (
-					<p style={{ color: "white", fontFamily: "sans-serif" }}>
+				{weather.map((forecast, index) => (
+					<p
+						key={index}
+						style={{ color: "white", fontFamily: "sans-serif" }}
+					>
 						{forecast.main.toUpperCase()}
 					</p>
 				))}

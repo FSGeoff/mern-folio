@@ -48,7 +48,7 @@ const Projects = () => {
 								</p>
 								<p>
 									<a href={project.repo}>GitHub Repo </a>/
-									<a href={project.website}>Website</a>
+									<a href={project.website}> Website</a>
 								</p>
 
 								<div class="content">
